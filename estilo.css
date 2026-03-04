@@ -1,0 +1,129 @@
+.perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 80px;
+}
+
+.menu {
+    background-color:oklch(70.8% 0 0);
+    text-align: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 35px;
+    
+}
+
+.p3 {
+    font-size: 17px;
+}
+
+
+.nome-foto {
+    box-shadow: 2px 2px 7px gray;
+    border-radius: 30px;
+    padding: 15px;
+    min-width: 150px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: oklch(98.5% 0 0);
+}
+
+.p1 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.card-info {
+    box-shadow: 2px 2px 7px gray;
+    border-radius: 30px;
+    padding: 15px;
+    width: 250px;
+    background-color: oklch(98.5% 0 0);
+    animation-name: animar1; 
+    animation-duration: 3s;
+    position: relative;
+}
+
+.card-formacao {
+    box-shadow: 2px 2px 7px gray;
+    border-radius: 30px;
+    padding: 15px;
+    width: 250px;
+    background-color: oklch(98.5% 0 0);
+    animation: animar2 3.5s;
+}
+
+.cards {
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: oklch(97% 0 0);
+    margin: 0;
+    padding: 0;
+}
+
+.icone-info {
+    width: 70px;
+    
+}
+
+.rodape {
+    background-color: oklch(70.8% 0 0);
+    margin-top: 120px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contatos {
+    box-shadow: 2px 2px 7px gray;
+    border-radius: 30px;
+    padding: 15px;
+    width: 250px;
+    background-color: oklch(98.5% 0 0);
+    animation: animar3 4s;
+}
+
+.titulo3 {
+    font-size: 21px;
+    
+}
+
+.links {
+    display: flex;
+    margin-top: 35px;
+}
+
+.p2 {
+    font-size: 17px;
+    padding: 15px;
+}
+
+#whatsapp, #instagram, #linkedin {
+    font-size: 60px;
+}
+
+@keyframes animar1 {
+    0% {transform: translate(600px);}
+}          
+
+@keyframes animar2 {
+    0% {transform: translate(700px);}
+}   
+
+@keyframes animar3 {
+    0% {transform: translate(800px);}
+}   
