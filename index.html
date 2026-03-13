@@ -11,7 +11,16 @@
     <!--cabeçalho do curriculo-->
 <header>
     <nav class="menu">
-         <a class="p3" href="sobre.html"> <p> Sobre mim</p></a>
+        <div class="menuicone"> &#9776 Menu</div> 
+         <ul>
+                <img width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Senac_logo.svg/3840px-Senac_logo.svg.png">
+                <i class="fa-solid fa-ghost fa-2xl" style="color: rgb(99, 230, 190);"></i>
+                    <li><a class="p3" href="sobre.html"> <p> Sobre mim</p></a></li>
+                    <li><a href="#card-info"> Pessoal</a></li>
+                    <li> <a href="#formacao"> Formação </a> </li>
+                    <li> <a href="#contatos"> Redes </a> </li>
+                    
+                </ul>
     </nav>
 
 </header>
@@ -26,7 +35,7 @@
     <hr>
     <div class="cards">
     
-        <div class="card-info">
+        <div id="card-info" class="card-info">
         
         <!--descrição simples-->
             <h3 class="info"> <i class="fa-regular fa-file-lines fa-2xl"></i>  Informações pessoais</h3>
@@ -37,7 +46,7 @@
                 <li> Endereço: <br> Avenida Porto Alegre, 428</li>
             </ul>
         </div>
-        <div class="card-formacao">
+        <div id="formacao"class="card-formacao">
         <!--formação-->
             <h3 class="formacao"> <i class="fa-solid fa-graduation-cap fa-xl"></i> Formação</h3>
             <ul class="formacao-lista">
@@ -47,7 +56,7 @@
                 <li> Programador de sistemas-SENAC</li>
             </ul>
         </div>
-        <div class="contatos">
+        <div id="contatos" class="contatos">
             <b><p class="titulo3"> <i class="fa-solid fa-share-nodes fa-xl"></i> Redes/Contato</p> </b>
             <div class="links">
             <a class="link-insta" href="https://instagram.com/rafael.alvs.ls/">  
@@ -67,8 +76,21 @@
 
 <!--rodapé-->
 <footer class="rodape">
-    <p> &copy; Criado por <b>Rafael Alves</b> (2026)</p>
+    <p> Criado por <b>Rafael</b> (2026)</p>
     
 </footer>
 </body>
+
+<script>
+
+    var botao = document.querySelector('.menuicone')
+    var listamenu = document.querySelector('.menu ul')
+//se houver click no botão ira expandir o menu
+
+    botao.addEventListener('click', function() {
+        //alterna a classe do menu
+        listamenu.classList.toggle('mostrarmenu')
+    });
+</script>
+
 </html>
