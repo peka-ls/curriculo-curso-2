@@ -4,10 +4,11 @@
 }
 
 .cabecalho {
-    background-color: oklch(55.6% 0 0);
+    background-color: oklch(70.8% 0 0);
     display: flex;
     align-items: center;
-    
+    flex-direction: column;
+    padding: 15px;
 }
 
 .cabecalho img {
@@ -16,4 +17,27 @@
     min-height: 150px;
     max-height: 250px;
     border-radius: 200px;
+}
+
+body {
+    background-color: oklch(97% 0 0);
+}
+
+.foldintro {
+    box-shadow: 2px 2px 7px black;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 20px;
+    width: 60%;
+    
+}
+
+.intro {
+    display: none;
+}
+
+.mostrarintro {
+    display: block;
 }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -12,17 +13,18 @@
             <img src="perfil.png" alt="perfil-sobre">
             <h1> Rafael Alves</h1>
             <h3> Programador Junior</h3>
-        </div>
-        <div class="intro">   
-        <h1> Sobre mim</h1>
-        <p> Meu nome é Rafael Alves, eu tenho 17 anos, moro em Nova Londrina - PR,
-            gosto de tecnologia e informática. <br>
-            Não possuo experiência na área até o momento e busco expandir meu conhecimento. 
-        </p>
-        </div>
-
+        </div>    
+        
     </header>
     <section>
+        <div class="foldintro"> Sobre</div>
+        <div class="intro">   
+            <h1> Sobre mim</h1>
+            <p> Meu nome é Rafael Alves, eu tenho 17 anos, moro em Nova Londrina - PR,
+                gosto de tecnologia e informática. <br>
+                Não possuo experiência na área até o momento e busco expandir meu conhecimento. 
+            </p>
+        </div>
         <div class="qualidades">
             <h2>  Qualidades</h2>
             <ul>
@@ -31,9 +33,9 @@
                 <li>Trabalho bem em equipe</li>
                 <li>Sociável</li>
             </ul>
-
+            
         </div>
-
+        
         <div class="habilidades">
             <h2>Habilidades </h2>
             <ul>
@@ -43,7 +45,7 @@
                 <li>Manutenção de hardware</li>
             </ul>             
         </div>
-
+        </div>
        
     </section>
 
@@ -53,4 +55,13 @@
 
 
 </body>
+
+<script>
+    var fold1 = document.querySelector ('.foldintro')
+    var folded1 = document.querySelector ('.intro')
+    fold1.addEventListener ('click', function() {
+        folded1.classList.toggle ('mostrarintro')
+    });
+</script>
+
 </html>
