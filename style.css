@@ -24,14 +24,11 @@ body {
 }
 
 .foldintro {
-    box-shadow: 2px 2px 7px black;
     padding: 15px;
     font-size: 20px;
     cursor: pointer;
     text-align: left;
     border-radius: 20px;
-    width: 60%;
-    
 }
 
 .intro {
@@ -40,4 +37,98 @@ body {
 
 .mostrarintro {
     display: block;
+}
+
+.intro p{
+    font-size: 20px;
+}
+
+.card-sobre{
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px black;
+    overflow: hidden;
+    padding: 15px;
+    background-color: oklch(86.9% 0.005 56.366);
+}
+
+.foldintro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardqualidades{
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px black;
+    overflow: hidden;
+    padding: 15px;
+    background-color: oklch(86.9% 0.005 56.366);
+}
+
+.foldqualidades {
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.qualidades {
+    display: none;
+}
+
+.mostrarqualidades {
+    display: block;
+}
+
+.qualidades ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.foldqualidades {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardhabilidades{
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px black;
+    overflow: hidden;
+    padding: 15px;
+    background-color: oklch(86.9% 0.005 56.366);
+}
+
+.foldhabilidades {
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.habilidades {
+    display: none;
+}
+
+.mostrarhabilidades {
+    display: block;
+}
+
+.habilidades ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.foldhabilidades {
+    display: flex;
+    justify-content: space-between;
 }

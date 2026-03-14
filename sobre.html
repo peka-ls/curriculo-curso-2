@@ -16,8 +16,11 @@
         </div>    
         
     </header>
-    <section>
-        <div class="foldintro"> Sobre</div>
+    <section class="acordeao">
+    <div class="card-sobre">
+        <div class="foldintro"> Sobre
+            <div> <i class="fa-solid fa-angle-down"></i> </div>
+        </div>
         <div class="intro">   
             <h1> Sobre mim</h1>
             <p> Meu nome é Rafael Alves, eu tenho 17 anos, moro em Nova Londrina - PR,
@@ -25,8 +28,13 @@
                 Não possuo experiência na área até o momento e busco expandir meu conhecimento. 
             </p>
         </div>
+    </div>
+    <div class="cardqualidades">
+        <div class="foldqualidades"> Minhas qualidades
+            <div> <i class="fa-solid fa-angle-down"></i> </div>
+        </div>
         <div class="qualidades">
-            <h2>  Qualidades</h2>
+            <h1>  Qualidades</h1>
             <ul>
                 <li>Proativo</li>
                 <li>Sempre quero aprender</li>
@@ -35,9 +43,13 @@
             </ul>
             
         </div>
-        
+    </div> 
+    <div class="cardhabilidades">
+    <div class="foldhabilidades"> Minhas habilidades
+        <div> <i class="fa-solid fa-angle-down"></i> </div>
+    </div>   
         <div class="habilidades">
-            <h2>Habilidades </h2>
+            <h1>Habilidades </h1>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -46,7 +58,7 @@
             </ul>             
         </div>
         </div>
-       
+    </div>   
     </section>
 
     <footer>
@@ -62,6 +74,21 @@
     fold1.addEventListener ('click', function() {
         folded1.classList.toggle ('mostrarintro')
     });
+
+</script>
+<script>
+     var fold2 = document.querySelector ('.foldqualidades')
+    var folded2 = document.querySelector ('.qualidades')
+    fold2.addEventListener ('click', function() {
+        folded2.classList.toggle ('mostrarqualidades')
+    });
 </script>
 
+<script>
+     var fold3 = document.querySelector ('.foldhabilidades')
+    var folded3 = document.querySelector ('.habilidades')
+    fold3.addEventListener ('click', function() {
+        folded3.classList.toggle ('mostrarhabilidades')
+    });
+</script>
 </html>
