@@ -1,111 +1,72 @@
-h1 {
-    text-align: center;
-    
-}    
-img {
-    width: 300px;
-    margin-top: 15px;
-    margin-left: -20px;
-    box-shadow: 5px 5px 3px gray;
-    border-radius: 15px;
-
-}
-body {
-    background-color: rgb(255, 235, 233)
-}
-.intro {
-    font-size: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-    text-align: center;
-}
-.atalho {
-  display: grid;
-  background-color: rgb(230, 209, 207);
-  padding: 5px;
-  border-radius: 30px;
-  margin-bottom: 40px;
-}
-.atalho div {
-  padding: px;
-  font-size: 25px;
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.receitas {
-    display: grid;
-    background-color: whitesmoke;
-    text-align: center;
-    border-radius: 50px;
-    margin-top: 40px;
-    width: 1250px;
-    margin: auto;
+.menu {
+    background-color: oklch(82.8% 0.189 84.429);
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.pao-atalho {
-    list-style: none;
-    color: black;
-    display: inline;
+.menu ul li {
+    margin-right: 25px;
 }
 
-.bolo-atalho {
-    list-style: none;
-    color: black;
+.inicio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(fundo.jpg);
+    background-clip: ;
+    background-size: cover;
 }
 
-.biscoito-atalho {
-    list-style: none;
-    color: black;
+.textoCardInicio {
+    display: flex;
+    flex-direction: column;
 }
 
-.biscoito-atalho:hover {
-    color: violet;
-}   
 
-.pao-atalho:hover {
-    color: violet;
-}
-.bolo-atalho:hover {
-    color: violet;
+.cardInicio img {
+    max-width: 250px;
+    max-height: 250px;
+
 }
 
-.pao {
-    font-size: 25px; 
-    list-style: none;
-    color: black;
-    text-decoration: none;
+.cardInicio {
+    background-color: oklch(92% 0.004 286.32);
+    max-width: 40%;
+    max-height: 30%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap: 15px;
 }
 
-.bolo {
-    font-size: 25px;
-    margin-top: 100px;
-    list-style: none;
-    color: black;
+.textoInicio2 {
+    display: flex;
+    flex-direction: column;
 }
 
-.bisc {
-    font-size: 25px;
-    margin-top: 100px;
-    list-style: none;
-    color: black;
+
+.cardInicio2 {
+    background-color: oklch(92% 0.004 286.32);
+    max-width: 40%;
+    max-height: 30%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap: 15px;
 }
 
-.bisc:hover {
-    color: violet;
+.cardInicio2 img {
+    max-width: 250px;
+    max-height: 250px;
+
 }
-
-.pao:hover {
-    color: violet;
-}
-
-.bolo:hover {
-    color: violet;
-}   
-
-a {
-    text-decoration: none;
-    display: inline;
-}
-
