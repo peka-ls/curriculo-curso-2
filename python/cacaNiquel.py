@@ -2,18 +2,6 @@ import random
 inicio = -1
 numeros = [1, 2, 3, 4, 5, 6, 7]
 
-# def sorteio1():
-#     numero1Sorteado = random.choice(numeros)
-#     print("O número sorteado foi:" + str(numero1Sorteado))
-
-# def sorteio2():
-#     numero2Sorteado = random.choice(numeros)
-#     print("O número sorteado foi:" + str(numero2Sorteado))
-
-# def sorteio3():
-#     numero3Sorteado = random.choice(numeros)
-#     print("O número sorteado foi:" + str(numero3Sorteado))
-
 while inicio != 2:
     print('''
 Digite uma das seguintes opções:
