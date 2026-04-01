@@ -1,19 +1,17 @@
 import random
 inicio = -1
-numeros1 = [1, 2, 3, 4, 5, 6, 7]
-numeros2 = [1, 2, 3, 4, 5, 6, 7]
-numeros3 = [1, 2, 3, 4, 5, 6, 7]
+numeros = [1, 2, 3, 4, 5, 6, 7]
 
 def sorteio1():
-    numeroSorteado = random.choice(numeros1)
+    numeroSorteado = random.choice(numeros)
     print("O número sorteado foi:" + str(numeroSorteado))
 
 def sorteio2():
-    numeroSorteado = random.choice(numeros2)
+    numeroSorteado = random.choice(numeros)
     print("O número sorteado foi:" + str(numeroSorteado))
 
 def sorteio3():
-    numeroSorteado = random.choice(numeros3)
+    numeroSorteado = random.choice(numeros)
     print("O número sorteado foi:" + str(numeroSorteado))
 
 while inicio != 2:
