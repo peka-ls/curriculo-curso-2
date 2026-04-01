@@ -2,17 +2,17 @@ import random
 inicio = -1
 numeros = [1, 2, 3, 4, 5, 6, 7]
 
-def sorteio1():
-    numeroSorteado = random.choice(numeros)
-    print("O número sorteado foi:" + str(numeroSorteado))
+# def sorteio1():
+#     numero1Sorteado = random.choice(numeros)
+#     print("O número sorteado foi:" + str(numero1Sorteado))
 
-def sorteio2():
-    numeroSorteado = random.choice(numeros)
-    print("O número sorteado foi:" + str(numeroSorteado))
+# def sorteio2():
+#     numero2Sorteado = random.choice(numeros)
+#     print("O número sorteado foi:" + str(numero2Sorteado))
 
-def sorteio3():
-    numeroSorteado = random.choice(numeros)
-    print("O número sorteado foi:" + str(numeroSorteado))
+# def sorteio3():
+#     numero3Sorteado = random.choice(numeros)
+#     print("O número sorteado foi:" + str(numero3Sorteado))
 
 while inicio != 2:
     print('''
@@ -22,9 +22,13 @@ Digite uma das seguintes opções:
 ''')
     inicio = int(input("Insira a opção desejada: "))
     if inicio == 1:
-        srtNum1 = sorteio1()
-        srtNum2 = sorteio2()
-        srtNum3 = sorteio3()
+        srtNum1 = numero1Sorteado = random.choice(numeros)
+        print("O número sorteado foi:" + str(numero1Sorteado))
+        srtNum2 = numero2Sorteado = random.choice(numeros)
+        print("O número sorteado foi:" + str(numero2Sorteado))
+        srtNum3 = numero3Sorteado = random.choice(numeros)
+        print("O número sorteado foi:" + str(numero3Sorteado))
+        
         if srtNum1 == srtNum2 == srtNum3:
             print("JACKPOT!!! Você ganhou o prêmio máximo!")
         elif srtNum1 == srtNum2 or srtNum1 == srtNum3 or srtNum2 == srtNum3:
