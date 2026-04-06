@@ -30,6 +30,7 @@ def evento_aleatorio():
     if escolha == escolhaIndesejada:
         print("Ops! o PC será desligado")
         abrirNavegador()
+        desligar()
     else:
         print("Você está seguro, por enquanto...")
 
