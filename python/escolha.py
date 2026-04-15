@@ -13,7 +13,7 @@ def abrirNavegador():
         webbrowser.open(site)
 
 def desligar():
-    time.sleep(7)
+    time.sleep(9)
     if sys.platform == "win32":
         os.system("shutdown /s /t 1")
     elif sys.platform == "linux" or sys.platform == "linux2":
