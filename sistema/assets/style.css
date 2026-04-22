@@ -14,3 +14,48 @@
 .telaLogin {
     background-color: rgba(255, 255, 255, 0.658);
 }
+
+.corbarra {
+    background-color: oklch(70.7% 0.165 254.624);
+}
+
+.sidebar {
+    background-color: oklch(37.2% 0.044 257.287);
+}
+
+.sidebar .nav-link {
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+.sidebar .nav-link:hover {
+    background: oklch(62.3% 0.214 259.815);
+}
+
+@media(max-width:991.98px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        z-index: 1000;
+
+    }
+
+    .escurecer {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 100;
+
+    }
+
+    .escurecer.show {
+        display: block;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+}
