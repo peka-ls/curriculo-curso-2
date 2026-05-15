@@ -117,7 +117,6 @@
 
                 while($coluna = mysqli_fetch_assoc($dados)) {
 
-                }
 
               ?>
                 
@@ -131,7 +130,7 @@
                     <a href=""> <i class="fa-solid fa-trash" style="color: rgb(255, 0, 0);"></i> </a> 
                   </td>
                 </tr>
-                <?php  ?>
+                <?php } ?>
               </tbody>
             </table>
             </div>
