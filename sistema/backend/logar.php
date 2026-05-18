@@ -24,6 +24,7 @@
         header('location:../ecolote.php');
     }
     else {
-        header('location:../login.php');
+        header('location:../loginErrado.php');
     }
+
 ?>

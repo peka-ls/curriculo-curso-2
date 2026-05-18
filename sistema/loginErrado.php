@@ -1,3 +1,6 @@
+<?php 
+    
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,7 +16,7 @@
 </head>
 <body class="corpoLogin">
 
-    <div class="row justify-content-center align-items-center vh-100 painel">
+    <div class="row justify-content-center align-items-center vh-100 painel " >
         <div class="col-8 col-sm-10 col-md-6 col-lg-4 card shadow p-3 telaLogin">
             <div class="text-center">
                 <i class="fa-solid fa-circle-user fa-2x" style="color: rgb(116, 192, 252); font-size: 70px;"></i>
@@ -31,9 +34,9 @@
                 <button type="submit" class="btn btn-primary"> Entrar </button>
                 <button type="reset"  class="btn btn-secondary"> Limpar </button>
 
-                <!--<div class="alert alert-danger" role="alert">
-                     <?php #echo $aviso ?>
-                </div>!-->
+                <div id="mensagemErro" class="alert alert-danger mt-2" role="alert" >
+                     <h6> Email ou senha incorretos </h4>
+                </div>
             </form>
 
         </div>

@@ -110,17 +110,13 @@
                 </tr>
               </thead>
               <tbody>
-              <?php 
-              
+              <?php               
                 $sql = 'SELECT * FROM usuario';
                 $dados = mysqli_query ($conexao, $sql);
 
                 while($coluna = mysqli_fetch_assoc($dados)) {
 
-
               ?>
-                
-
                 <tr>
                   <th scope="row"> <?php echo $coluna['id'] ?> </th>
                   <td> <?php echo $coluna['nome'] ?></td>

@@ -14,9 +14,9 @@ if (!isset($_SESSION['email']) or !isset($_SESSION['senha'])) {
     unset($_SESSION['senha']);
 
     //manda login
-    header('location:../sistema/login.php');
+    header('location:../backend/login.php');
 
-    $senhaIncorreta = true;
+    #$senhaIncorreta = true;
     exit;
 }
 
