@@ -9,10 +9,4 @@
     if(!$conexao) {
         echo "Erro de conexão";
     }
-   # else {
-   #     echo "Parabéns, conectou ";
-  #  }
-
-    
-
 ?>
