@@ -1,7 +1,18 @@
 <?php 
   include 'backend/conexao.php';
-  include 'backend/validacao.php'
+  include 'backend/validacao.php';
 
+  $destino = "./backend/usuario/inserir.php";
+
+  if(!empty($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM usuario WHERE id='$id'";
+
+    $dados = mysqli_query($conexao, $sql);
+    $usuarios = mysqli_fetch_assoc($dados);
+
+    $destino = "./backend/usuario/alterar.php";
+  }
 ?>
 
 <!doctype html>
@@ -52,6 +63,8 @@
     </div>
   </div>
 </nav>
+
+
 <div id="escurecer" class="escurecer" onclick="abrirmenu()"></div>
     
    <div class="container-fluid">
@@ -75,23 +88,27 @@
                 </aside>
             </div>
             <div class="col-md-5">
-              <form action="./backend/usuario/inserir.php" method="post" class="p-3">
+              <form action="<?=$destino ?>" method="post" class="p-3">
                 <h3> <i class="fa-solid fa-circle-plus"></i> Cadastro </h3>
                  <div class="mb-3">
+                    <label class="form-label"> id </label>
+                    <input value="<?php echo isset($usuarios) ? $usuarios['id'] : "" ?>" type="text" name="id" class="form-control" readonly>
+                </div>
+                <div class="mb-3">
                     <label class="form-label"> Nome </label>
-                    <input type="text" name="nome" class="form-control">
+                    <input value="<?php echo isset($usuarios) ? $usuarios['nome'] : "" ?>" type="text" name="nome" class="form-control">
                 </div>
                  <div class="mb-3">
                     <label class="form-label"> Cpf </label>
-                    <input type="text" name="cpf" class="form-control">
+                    <input value="<?php echo isset($usuarios) ? $usuarios['cpf'] : "" ?>" type="text" name="cpf" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label"> Email </label>
-                    <input type="email" name="email" class="form-control">
+                    <input value="<?php echo isset($usuarios) ? $usuarios['email'] : "" ?>" type="email" name="email" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label class="form-label"> Senha </label>
-                    <input type="password" name="senha" class="form-control">
+                    <input value="<?php echo isset($usuarios) ? $usuarios['senha'] : "" ?>" type="password" name="senha" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-primary"> Cadastrar </button>
                 <button type="reset" class="btn btn-secondary"> Limpar </button>
@@ -122,8 +139,9 @@
                   <td> <?php echo $coluna['nome'] ?></td>
                   <td> <?php echo $coluna['email'] ?></td>
                   <td>
-                    <a href=""> <i class="fa-solid fa-pen-to-square" style="color: rgb(1, 92, 164);"></i> </a> 
-                    <a href="<?php echo './backend/usuario/excluir.php?id='. $coluna['id']   ?>" onclick="return confirm('Deseja REALMENTE excluir?')" > <i class="fa-solid fa-trash" style="color: rgb(255, 0, 0);"></i> </a> 
+                    <a href="./ecolote.php?id=<?= $coluna['id'] ?>"> <i class="fa-solid fa-pen-to-square" style="color: rgb(1, 92, 164);"></i> </a> 
+                    <a href="<?php echo './backend/usuario/excluir.php?id='. $coluna['id']   ?>" onclick="return confirm('Deseja REALMENTE excluir?')" > <i class="fa-solid fa-trash" style="color: rgb(255, 0, 0);"></i> </a>
+                    
                   </td>
                 </tr>
                 <?php } ?>
@@ -133,7 +151,6 @@
         </div>
 
    </div>
-   
 
    <script>
         function abrirmenu(){
